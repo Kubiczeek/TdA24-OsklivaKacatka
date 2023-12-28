@@ -1,17 +1,17 @@
-# Use a Node.js base image
-FROM node:18-alpine
-
-# Set the working directory in the container
+FROM node:18-alpine AS builder
+RUN npm install -g pnpm
 WORKDIR /app
-
-# Copy the backend application code into the container
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install
 COPY . .
+RUN pnpm run build
+RUN pnpm prune --production
 
-# Install backend dependencies
-RUN npm install
-
-# Expose the port your backend will run on
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
 EXPOSE 3000
-
-# Start the Express.js server
-CMD [ "node", "index.js" ]
+ENV NODE_ENV=production
+CMD [ "node", "build" ]

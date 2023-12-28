@@ -1,5 +1,6 @@
-# Tour de App - Generic boilerplate
 
-Šablona pro vývoj aplikace pro Tour de App obsahující pouze GitHub Action s vytvořením a nahráním výstupu.
-Je potřeba přidat Dockerfile, který na základě zdrojového kódu aplikace vytvoří docker image vaší aplikace. 
-Aplikace může běžet na libovolném portu zpřístupněném pomocí příkazu `EXPOSE PORT_NUMBER` ve vaší Dockerfile.
+# TdA24
+## Ošklivá Káčátka - Pracovní
+
+Zde je pracovní repozitář pro tým ošklivá káčátka na Tour de App 2024.
+Proč máme 2 repozitáře? Protože Adam neumí commitovat a nechci aby to tu vypadalo jako ve chlívku

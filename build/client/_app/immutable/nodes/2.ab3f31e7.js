@@ -1,3 +1,0 @@
-import{s as _,n as m}from"../chunks/scheduler.e108d1fd.js";import{S as u,i as x,g as p,s as h,m as C,h as v,y as d,c as H,n as y,a as i,f as o}from"../chunks/index.a21d6cee.js";function T(f){let e,c="Welcome to SvelteKit",a,s,r='Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation',l;return{c(){e=p("h1"),e.textContent=c,a=h(),s=p("p"),s.innerHTML=r,l=C(`
-Hello TdA`)},l(t){e=v(t,"H1",{"data-svelte-h":!0}),d(e)!=="svelte-yyjjjs"&&(e.textContent=c),a=H(t),s=v(t,"P",{"data-svelte-h":!0}),d(s)!=="svelte-1vc1ga9"&&(s.innerHTML=r),l=y(t,`
-Hello TdA`)},m(t,n){i(t,e,n),i(t,a,n),i(t,s,n),i(t,l,n)},p:m,i:m,o:m,d(t){t&&(o(e),o(a),o(s),o(l))}}}class g extends u{constructor(e){super(),x(this,e,null,T,_,{})}}export{g as component};
